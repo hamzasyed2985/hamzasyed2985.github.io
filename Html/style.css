@@ -1,0 +1,28 @@
+body {
+  background-color: rgb(182, 230, 176);
+  background-image: url(./pic_bulbon.gif);
+  background-repeat: no-repeat;
+  background-position: center top ;
+}
+h1 {
+  color: blue;
+}
+p {
+  color: red;
+}
+th{
+  text-align: left;
+}
+th,td{
+  padding: 20px;;
+}
+
+table,th,td{
+  width: 50%;
+  border:solid;
+  border-collapse: collapse;
+}
+hello{
+  color: rgb(253, 240, 255);
+  
+}
