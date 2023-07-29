@@ -25,7 +25,6 @@ body {
 
 .navbar-header {
   display: flex;
-  justify-content: flex-end;
 }
 
 #logo-img {
@@ -363,13 +362,22 @@ font-size: 1.3em;
 @media (max-width: 767px) {
   .container {
     padding-left: 15px;
-    padding-right: 15px;
+    padding-right: 20px;
     max-width: 765px;
   }
-  .navbar-header {
-    display: flex;
-    flex-direction: row;
-    justify-content: start;
+  #header-container{
+    display: block;
+  }
+  #navbar-header{
+    display: block;
+  }
+  .navbar-header button.navbar-toggler {
+    position: relative;
+    float: right;
+    margin-top: -40px;
+    margin-right: 10px;
+    border: 1px solid #61122f;
+    padding: 10px;
   }
   .navbar-brand {
     height: 80px;
@@ -418,6 +426,7 @@ font-size: 1.3em;
 #hours ,#address , #testimonials{
 text-align: center;
 }
+
 .category-tile{
   display: flex;
   flex-direction: column;
@@ -425,8 +434,10 @@ text-align: center;
   border: 2px solid #3f0c1f;
   width: 180px;
   height: 180px;
-  margin: 0 auto 15px; 
+  margin: 0 auto 15px;
+  
 }
+
 .menu-item-tile{
   flex-direction: column;
   margin-top: 5px;
