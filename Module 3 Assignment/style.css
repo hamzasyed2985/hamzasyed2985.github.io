@@ -175,6 +175,7 @@ body {
   .navbar-header button.navbar-toggler {
     position: relative;
     float: right;
+    margin-top: -40px;
     margin-right: 10px;
     border: 1px solid #61122f;
     padding: 10px;
