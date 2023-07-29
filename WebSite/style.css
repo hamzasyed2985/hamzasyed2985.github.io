@@ -418,6 +418,15 @@ font-size: 1.3em;
 #hours ,#address , #testimonials{
 text-align: center;
 }
+.category-tile{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  border: 2px solid #3f0c1f;
+  width: 180px;
+  height: 180px;
+  margin: 0 auto 15px; 
+}
 .menu-item-tile{
   flex-direction: column;
   margin-top: 5px;
