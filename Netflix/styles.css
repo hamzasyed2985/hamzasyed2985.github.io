@@ -185,7 +185,6 @@ hr.solid{
     padding: 0;
 }
 
-
 @media only screen and (max-width:599px){
     h2{
         font-size: 1.7rem;
@@ -202,7 +201,7 @@ hr.solid{
     .banner-text{
         top: 15%;
     }
- #email{
+    #email{
         padding: 0.9rem 5rem 0.9rem 0.3rem;
     }
     .get-started{
@@ -289,6 +288,5 @@ hr.solid{
         }
     .faqs, .footer{
         flex-direction: column;
-    }
-    
+    } 
 }
