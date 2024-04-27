@@ -1,0 +1,294 @@
+*{
+    background-color: black;
+    font-family: Helvetica, sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+    color: white;
+}
+body{
+    background-color: black;
+}
+header{
+    position: absolute;
+    width: 100%;
+    background-color: transparent;
+    z-index: 2;
+}
+.header{
+    padding: 0rem 1rem;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: transparent;
+}
+.logo{
+    width: 150px;
+    height: 92px;
+    background-color: transparent;
+}
+#sign-in_button{
+    color: white;
+    background-color: red;
+    padding: 0.25rem 1rem;
+    border-radius: 0.1875rem;
+    border-color: red;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+.banner-section{
+    height: 65vh; 
+}
+.banner-image{
+    position: relative;
+    background-image:url("desktop-banner.jpg");
+    height: 65vh;  
+    background-size: cover;
+}
+.overlay {
+    background-color: rgba(0, 0, 0, 0.61);
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 65vh;
+  }
+.banner-text{
+    position: absolute;
+    width: 100%;
+    padding: 3%;
+    top: 25%;
+    background-color: transparent;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+.banner-text p, .banner-text h2{
+    color: white;
+    background-color: transparent;
+    text-align: center;
+}
+.banner-text div{
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+#email{
+    background-color: rgba(255, 255, 255, 0.199);
+    padding: 1.1rem 10rem 1.1rem 0.3rem;
+    border-radius: 0.2rem;
+    border-color: rgba(255, 255, 255, 0.527);
+}
+#email::placeholder{
+    color: white;
+}
+.get-started{
+    padding: 0.8rem 1.66rem ;
+    background-color: red;
+    color: white;
+    border-color: red;
+    border-radius: 5px;
+    font-size: 1.4rem;
+}
+hr.solid{
+    position: relative;
+    bottom: 0.5rem;
+    height: 0.5rem;
+    background-color: rgb(255 255 255);
+    border-color: transparent;
+}
+.watch-on-tv ,.watch-on-mobile, .watch-everywhere, .kids, .faqs{
+    padding: 4.5rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#TV-text{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+#Tv-video {
+    display: flex;
+    position: relative;   
+}
+#Tv-video img, #mobile-video> img, .kids img, .accordin{
+    width: 100%;
+}
+#Tv-video video{
+    position: absolute;
+    top: 20%;
+    left: 13%;
+    width: 73%;
+}
+#mobile-video{
+    display: flex;
+    position: relative;
+}
+.boxshot{
+    position: absolute;
+    bottom: 5%;
+    left: 25%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    border: 2px solid rgba(128, 128, 128, 0.7);
+    border-radius: 5px;
+    width: 50%;
+    box-shadow: 0 0 2em 0 rgb(0, 0, 0);
+    padding: 0.5rem 0.75rem;
+}
+.boxshot div{
+    display: flex;
+    flex-direction: column;
+}
+.watch-everywhere{
+    display: flex;
+    flex-direction: column !important;
+    gap: 15px;
+    align-items: flex-start;
+}
+.kids,.faqs{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.accordion-button{
+    background-color: rgb(45,45,45);
+    color: white;
+}
+.footer{
+    padding: 4.5rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 15px;
+}
+.footer ul, footer a{
+    list-style-type: none;
+    color: rgba(255,255,255,0.7);
+    text-decoration: none;
+}
+.row{
+    display: flex;
+    margin: 0;
+}
+.footer-col{
+    width: 25%;
+    padding: 0;
+}
+.footer-col ul{
+    padding: 0;
+}
+
+
+@media only screen and (max-width:599px){
+    h2{
+        font-size: 1.7rem;
+    }
+    p{
+        font-size: 0.9rem;
+    }
+    .logo{
+        width: 80px;
+    }
+    .banner-section ,.banner-image, .overlay{
+        height: 55vh; 
+    }
+    .banner-text{
+        top: 15%;
+    }
+ #email{
+        padding: 0.9rem 5rem 0.9rem 0.3rem;
+    }
+    .get-started{
+        padding: 0.7rem 1.8rem ;
+    }
+    #TV-text, #mobile-text, .watch-everywhere, .kids{
+        align-items: center;
+        text-align: center;
+    }
+    .watch-on-mobile, .kids{
+        flex-direction: column-reverse;
+    }
+    .boxshot{
+        padding: 0;
+    }
+    .footer-col{
+        width: 50%;
+        padding: 0;
+    }
+}
+
+@media only screen and (min-width:600px) and (max-width:959px){
+    h2{
+        font-size: 1.7rem;
+    }
+    p{
+        font-size: 0.9rem;
+    }
+    .logo{
+        width: 120px;
+    }
+    .banner-section ,.banner-image, .overlay{
+        height: 55vh; 
+    }
+    .banner-text{
+        top: 15%;
+    }
+    .banner-text div {
+        flex-direction: row;
+    }
+    #TV-text ,#mobile-text,.watch-everywhere, .kids{
+        align-items: center;
+        text-align: center;
+    }
+    .watch-on-mobile, .kids{
+        flex-direction: column-reverse;
+    }
+    .footer-col{
+        width: 50%;
+        padding: 0;
+    }
+
+}
+@media only screen and (min-width:960px) and (max-width:1280px) {
+    h2{
+        font-size: 2.5rem;
+    }
+    p{
+        font-size: 1.2rem;
+    }
+    .banner-text div, .watch-on-tv, .watch-on-mobile, .kids{
+        flex-direction: row;
+    }
+
+}
+@media only screen and (min-width:1281px){
+    h2{
+        font-size: 2.5rem;
+    }
+    p{
+        font-size: 1.2rem;
+    }
+    .header{
+        margin:0% 8%;
+        padding: 0rem 3rem;
+    }
+    .banner-text div{
+        flex-direction: row;
+    }
+    .watch-on-tv, .watch-on-mobile, .watch-everywhere, .kids, .faqs, .footer{
+        margin: 0 8%;
+        padding: 3rem 3rem;
+        flex-direction: row;
+        }
+    .faqs, .footer{
+        flex-direction: column;
+    }
+    
+}
